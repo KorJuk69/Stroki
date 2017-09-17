@@ -7,14 +7,14 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        String str = scanner.next();
+        String str = scanner.nextLine();
 
         int slova = 1;
 
         for (int i=0;i<str.length();i++){
 
             char simvol = str.charAt(i);
-            if (simvol. )
+            if (simvol == ' ') slova++;
 
         }
 
