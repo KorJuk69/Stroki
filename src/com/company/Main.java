@@ -7,7 +7,17 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        int a = scanner.nextInt();
+        String str = scanner.next();
+
+        int slova = 1;
+
+        for (int i=0;i<str.length();i++){
+
+
+
+        }
+
+        System.out.print(slova);
 
     }
 }
