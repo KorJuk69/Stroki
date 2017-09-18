@@ -10,7 +10,8 @@ public class Main {
         String str = scanner.nextLine();
 
         int dlinna_slova = 0;
-        int slovo=0;
+        int max_slovo_int=0;
+        String max_slovo_string = "";
         String max_slovo = "";
 
         for (int i=0;i<str.length();i++){
@@ -22,24 +23,20 @@ public class Main {
             if (simvol == ' ') {
 
                 dlinna_slova--;
-                if(dlinna_slova>slovo){
-                    slovo = dlinna_slova;
-                    /*max_slovo = "";
-                    i = i - dlinna_slova;
-                    как-то так
-                     */
+                if(dlinna_slova>max_slovo_int){
+                    max_slovo_int = dlinna_slova;
+                    max_slovo_string = max_slovo;
+                    i = i - (dlinna_slova + 1);
                 }
 
                 dlinna_slova=0;
+                max_slovo = "";
 
             }
-
         }
 
-        System.out.print(slovo);
-        System.out.print(max_slovo);
-
-        //Решить проблему с проверкой последнего слова и дописать вывод самого большого слова
+        System.out.println(max_slovo_int);
+        System.out.print(max_slovo_string);
 
     }
 }
