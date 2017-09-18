@@ -16,7 +16,7 @@ public class Main {
 
             char simvol_str = str.charAt(n);
 
-            for (int m=ravnost;m<podstr.length();m++) {
+            for (int m=ravnost;m<podstr.length();) {
 
                 char simvol_podstr = podstr.charAt(m);
 
