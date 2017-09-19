@@ -19,7 +19,7 @@ public class Main {
 
 
 
-            for (int m = i;m>0;m--) {
+            for (int m = i;m>0;) {
 
                 char simvol_minus = str.charAt(m-1);
 
